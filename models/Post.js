@@ -20,6 +20,10 @@ Post.init(
         type: DataTypes.DATE,
         allowNull: false
     },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     post_contents: {
       type: DataTypes.TEXT,
       allowNull: false

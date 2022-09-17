@@ -6,7 +6,9 @@
     background-color: var(--light);
 }
 
-
+.container-fluid{
+    background-color: var(--light);
+}
 
 .navbar{
     border: 10px solid var(--light);
@@ -24,6 +26,57 @@ a{
 }
 
 .custom-toggler .navbar-toggler-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(221, 96, 49)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(78, 80, 145)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.card{
+    border-radius: 0px;
+    border: 5px solid var(--white);
+    background-color: var(--light);
+    color: var(--white);
+}
+
+.card h4{
+    margin: 0px;
+}
+
+.card h4, .card h6{
+    background-color: var(--white);
+    color: var(--light);
+    padding: 5px 0px 0px 5px;
+}
+
+.card h6{
+    padding-bottom: 5px;
+}
+
+.card-body{
+    padding: 0%;
+}
+
+.card-text{
+    padding: 10px;
+}
+
+.card p{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+input{
+    padding: 10px;
+}
+
+label{
+    font-size: x-large;
+}
+
+.form-input{
+    border-radius: 15px;
+    border: none;
+}
+
+.btn{
+    color: var(--light);
+    font-weight: bold;
+}
