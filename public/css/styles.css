@@ -3,10 +3,9 @@
     --white: #eff4fb;
     --dark: #4e5091;
     --light: #6360bc;
-    background-color: var(--light);
 }
 
-.container-fluid{
+body, .container-fluid{
     background-color: var(--light);
 }
 
@@ -18,15 +17,19 @@
 
 a{
     color: var(--dark);
+    margin-left: 10px;
 }
+
 
 .navbar-brand {
     font-size: xx-large;
     font-weight: bold;
+    margin: 0px;
 }
 
-.nav-link:active, .nav-link:hover {
-    color: var(--light);
+.nav-link:active, .nav-link:hover, h1 {
+    color: var(--dark);
+    text-decoration: none;
 }
 
 .navbar-brand:hover{
@@ -46,6 +49,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     border: 5px solid var(--white);
     background-color: var(--light);
     color: var(--white);
+    margin: 10px;
 }
 
 .card h4{
@@ -84,11 +88,17 @@ label{
 }
 
 .form-input{
-    border-radius: 15px;
     border: none;
+}
+
+.form-input, .form-input:active{
+    border: none;
+    outline: none;
+    color: var(--dark);
 }
 
 .btn{
     color: var(--light);
     font-weight: bold;
+    border-radius: 0px;
 }
