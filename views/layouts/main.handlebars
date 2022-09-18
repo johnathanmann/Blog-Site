@@ -8,7 +8,7 @@
     {{!-- Bootstrap stylsheets --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     {{!-- Local stylesheet --}}
-    <link rel="stylesheet" href="/Blog-Site/public/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     {{!-- Google Font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" >
@@ -25,30 +25,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Dashboard <span class="sr-only"></span></a>
+                <a class="nav-link">Dashboard <span class="sr-only"></span></a>
               </li>
-              {{!-- These only need to be shown if not logged in hence the if statement --}}
-              {{#if !logged_in}}
               <li class="nav-item active">
                 <a class="nav-link" href="#">Login <span class="sr-only"></span></a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Sign Up <span class="sr-only"></span></a>
               </li>
-              {{/if}}
-              {{!-- If your logged in you dont need to log in or sign up therefore you get a log out option --}}
-              {{#if logged_in}}
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Log Out <span class="sr-only"></span></a>
-              </li>
-              {{/if}}
         </div>
       </nav>
     </header>
     {{!-- Posts will display here --}}
-      <main class="container ">
     {{{ body }}}
-    </main>
 
 
     {{!-- Bootstrap JS --}}
