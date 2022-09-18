@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post } = require('../models/Post');
 
-router.get('https://murmuring-escarpment-36262.herokuapp.com//', async (req, res) => {
+router.get('https://murmuring-escarpment-36262.herokuapp.com/', async (req, res) => {
     try {
       res.render('posts');
     } catch (err) {
@@ -9,7 +9,7 @@ router.get('https://murmuring-escarpment-36262.herokuapp.com//', async (req, res
     }
   });
 
-router.get('https://murmuring-escarpment-36262.herokuapp.com//login', async (req, res) => {
+router.get('https://murmuring-escarpment-36262.herokuapp.com/login', async (req, res) => {
     try {
       res.render('login');
     } catch (err) {
@@ -17,7 +17,7 @@ router.get('https://murmuring-escarpment-36262.herokuapp.com//login', async (req
     }
   });
 
-router.get('https://murmuring-escarpment-36262.herokuapp.com//sign-up', async (req, res) => {
+router.get('https://murmuring-escarpment-36262.herokuapp.com/sign-up', async (req, res) => {
     try {
       res.render('signup');
     } catch (err) {
