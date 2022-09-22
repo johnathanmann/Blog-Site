@@ -19,7 +19,7 @@ router.get('/login', async (req, res) => {
 
 router.get('/sign-up', async (req, res) => {
     try {
-      res.render('singup');
+      res.render('signup');
     } catch (err) {
       res.status(500).json(err);
     }
